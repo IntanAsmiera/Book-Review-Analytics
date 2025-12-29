@@ -1,0 +1,238 @@
+:root {
+    --bg-color: #f5f3ff;
+    --card-bg: #ffffff;
+    --primary: #a78bfa;
+    --primary-dark: #6d28d9;
+    --hover: #7c3aed;
+    --text-dark: #374151;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 12px 24px;
+}
+
+/* Logo + Site Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between logo and text */
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    border-radius: 8px; /* optional */
+}
+
+.site-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Navigation */
+nav {
+    background-color: var(--primary);
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+header h1 {
+    margin-bottom: 6px;
+    color: var(--primary-dark);
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0 0 24px 24px;
+}
+
+/* Content */
+.content {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+/* Card / Box */
+.box {
+    background-color: var(--card-bg);
+    padding: 28px;
+    margin-bottom: 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+}
+
+.box h2,
+.box h3 {
+    color: var(--primary-dark);
+    margin-top: 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+/* Button */
+.btn-container {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.btn-primary {
+    padding: 12px 28px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover);
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 650px;
+    border: none;
+    border-radius: 18px;
+}
+/* Profile Card */
+.profile-card {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    margin-bottom: 18px;
+}
+
+/* Profile Info */
+.profile-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    padding: 10px 22px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--hover);
+    transform: translateY(-2px);
+}
+
+/* About Page Background */
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Optional overlay for soft blur & pastel effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* soft blur */
+    z-index: -1; /* behind content */
+}
+.powerbi-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(128, 0, 128, 0.25);
+}
