@@ -1,10 +1,12 @@
 :root {
-    --bg-color: #f5f3ff;
-    --card-bg: #ffffff;
-    --primary: #a78bfa;
-    --primary-dark: #6d28d9;
-    --hover: #7c3aed;
-    --text-dark: #374151;
+    --bg-color: #1b1029;        /* keep dark background */
+    --card-bg: #0f0f0f;        /* keep card background */
+
+    --primary: #882664;        /* MAIN purple (from image) */
+    --primary-dark: #a84a85;   /* lighter version for headings */
+    --hover: #6f1f52;          /* darker hover state */
+
+    --text-dark: #e5e7eb;
 }
 
 * {
@@ -126,8 +128,14 @@ header h1 {
 /* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);;
     gap: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
 }
 
 /* Button */
